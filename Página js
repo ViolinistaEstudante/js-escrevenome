@@ -1,0 +1,19 @@
+function setup() {
+  createCanvas(400, 400);
+}
+
+function draw() {
+  background("white");
+  fill("black")
+  textSize(64);
+  textFont("Georgia")
+  textAlign(CENTER, CENTER)
+  let maximo = width;
+  let minimo = 0;
+  let palavra = "Pão é Bom"
+  let quantidade = map(mouseX, minimo, maximo, 1, palavra.length);
+  let parcial = palavra.substring(0, quantidade)
+  text(parcial, 200, 200)
+
+
+}
